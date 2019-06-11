@@ -1,2 +1,7 @@
 # node-socketio-vue-chat
-I'm use server on Expressjs and its have only 21 lines of code
+This is a very simple online Node.js chat, based on Express.js and Socket.io
+
+For install:
+1) npm i
+2) node server.js
+3) your chat will be at http://localhost:3000/
