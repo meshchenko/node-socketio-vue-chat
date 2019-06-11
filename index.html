@@ -25,10 +25,7 @@
       el: '.chat',
       data: {
         message: '',
-        messages: [
-          'Hi!',
-          'How are you?'
-        ]
+        messages: []
       },
       methods: {
         send: function (e) {
@@ -40,8 +37,13 @@
 
           this.message = '';
         }
+      },
+      mounted: function(){
+        socket.on('message', function(message){
+          this.messages.push(message);
+        }.bind(this));
       }
-    })
+    });
   </script>
 </body>
 </html>
