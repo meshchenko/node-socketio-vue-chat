@@ -1,5 +1,5 @@
 # node-socketio-vue-chat
-This is a very simple online Node.js chat, based on Express.js and Socket.io
+This is a very simple online Node.js chat, based on Vue.js, Express.js and Socket.io
 
 For install:
 1) npm i
