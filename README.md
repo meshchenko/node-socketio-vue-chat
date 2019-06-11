@@ -1,6 +1,6 @@
 # node-socketio-vue-chat
-This is a very simple online Node.js chat, based on Vue.js, Express.js and Socket.io \n
-Online version: http://165.22.193.68:3000/
+<p>This is a very simple online Node.js chat, based on Vue.js, Express.js and Socket.io</p>
+<p>Online version: http://165.22.193.68:3000/ </p>
 
 For install:
 1) npm i
