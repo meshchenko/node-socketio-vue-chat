@@ -9,7 +9,11 @@ app.get('/', function (request, response) {
 io.on('connection', function (socket) {
   let user = Date.now();
 
-  socket.broadcast.emit('message', `User ${user} connected`); //show to anyone exept new user
+  socket.on('message.sent', function(message){
+    io.emit('message', `User ${user}: ${message}`)
+  });
+
+  io.emit('message', `User ${user} connected`);
 });
 
 http.listen(3000, function () {
